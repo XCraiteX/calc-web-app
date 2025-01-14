@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <section class="page">
+        <div class="bg"></div>
+        <div class="main">
+            <input id="input" type="text">
+            <button onclick="WriteSymbol('1')">1</button>
+            <button onclick="WriteSymbol('2')">2</button>
+            <button onclick="WriteSymbol('3')">3</button>
+            <button onclick="Slice()"><</button>
+
+            <button onclick="WriteSymbol('4')">4</button>
+            <button onclick="WriteSymbol('5')">5</button>
+            <button onclick="WriteSymbol('6')">6</button>
+            <button onclick="Reset()">C</button>
+
+            <button onclick="WriteSymbol('7')">7</button>
+            <button onclick="WriteSymbol('8')">8</button>
+            <button onclick="WriteSymbol('8')">9</button>
+            <button onclick="WriteSymbol('+')">+</button>
+            
+
+            <button onclick="WriteSymbol('*')">*</button>
+            <button onclick="WriteSymbol('0')">0</button>
+            <button onclick="WriteSymbol('.')">.</button>
+            <button onclick="WriteSymbol('-')">-</button>
+           
+
+            <button onclick="WriteSymbol('/')">/</button>
+            <button onclick="WriteSymbol('%')">%</button>
+            <button onclick="Equal()">=</button>
+
+        </div>
+    </section>
+
+
+    <script>
+        window.resizeTo(380, 660);
+        window.onresize = function () {window.resizeTo(380, 660);}
+    </script>
+    <script src="eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
