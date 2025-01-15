@@ -9,5 +9,3 @@ def calculate(string):
     except: return 'Error!'
 
 eel.start('web.html', size = (380, 660))
-
-
